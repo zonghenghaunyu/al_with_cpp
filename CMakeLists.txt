@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.16)
 
 project (usegtest)
-
+SET(CMAKE_BUILD_TYPE "Debug")
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #add_executable(usegtest third_party/doctest/doctest.h )
 add_subdirectory (src)

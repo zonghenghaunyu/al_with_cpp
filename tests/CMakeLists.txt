@@ -1,7 +1,10 @@
 include_directories (${PROJECT_SOURCE_DIR}/include)
 
 cmake_minimum_required(VERSION 3.16)
-
+#debug 参数
+SET(CMAKE_BUILD_TYPE "Debug")
+# SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -static -O0 -Wall -g2 -ggdb")
+# SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -static -O3 -Wall")
 ###############################################################################
 set(_json_test_cmake_list_file{CMAKE_CURRENT_LIST_FILE})
 

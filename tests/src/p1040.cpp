@@ -2,6 +2,7 @@
 #include<string>
 #include<vector>
 #include<algorithm>
+#include "doctest.h"
 using namespace std;
 
 class Solution {
