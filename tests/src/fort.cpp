@@ -9,7 +9,7 @@
 //    int c = deleted();
 //    std::cout<<c<<std::endl;
 //}
-TEST_CASE("unit-fort")
+TEST_CASE("fort")
 {
     std::cout<<"asdasdadsa"<<std::endl;
 

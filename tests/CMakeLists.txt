@@ -97,7 +97,9 @@ endfunction()
 
 # for internal use by json_test_add_test_for()
 function(_json_test_add_test test_name file main cxx_standard)
-    set(test_target ${test_name}_cpp${cxx_standard})
+    #去除_cpp11后缀，直接使用中文名
+    # set(test_target ${test_name}_cpp${cxx_standard})
+    set(test_target ${test_name})
 
     if(TARGET ${test_target})
         message(FATAL_ERROR "Target ${test_target} has already been added.")
@@ -197,15 +199,17 @@ function(json_test_add_test_for file)
         message(FATAL_ERROR "Required argument MAIN <main> missing.")
     endif()
 
-    if("${args_NAME}" STREQUAL "")
+    # if("${args_NAME}" STREQUAL "")
         get_filename_component(file_basename ${file} NAME_WE)
-        string(REGEX REPLACE "unit-([^$]+)" "test-\\1" test_name ${file_basename})
-    else()
-        set(test_name ${args_NAME})
-        if(NOT test_name MATCHES "test-[^$]+")
-            message(FATAL_ERROR "Test name must start with 'test-'.")
-        endif()
-    endif()
+        # string(REGEX REPLACE "unit-([^$]+)" "test-\\1" test_name ${file_basename})
+        # string(REGEX REPLACE "([^$]+)" "\\1" test_name ${file_basename})
+
+    # else()
+        # set(test_name ${args_NAME})
+        # if(NOT test_name MATCHES "test-[^$]+")
+            # message(FATAL_ERROR "Test name must start with 'test-'.")
+        # endif()
+    # endif()
 
     if("${args_CXX_STANDARDS}" STREQUAL "")
         set(args_CXX_STANDARDS 11)
@@ -224,8 +228,9 @@ function(json_test_add_test_for file)
                 continue()
             endif()
         endif()
-
-        _json_test_add_test(${test_name} ${file} ${args_MAIN} ${cxx_standard})
+        #直接使用file_basename
+        _json_test_add_test(${file_basename} ${file} ${args_MAIN} ${cxx_standard})
+        # _json_test_add_test(${test_name} ${file} ${args_MAIN} ${cxx_standard})
     endforeach()
 endfunction()
 
@@ -290,8 +295,8 @@ endforeach()
 string(JOIN " " msg_standards ${msg_standards})
 set(msg "Testing standards: ${msg_standards}")
 
-
-file(GLOB files unit-*.cpp)
+# file(GLOB files unit-*.cpp)
+file(GLOB files src/*.cpp)
 
 foreach(file ${files})
     json_test_add_test_for(${file} MAIN test_main CXX_STANDARDS ${test_cxx_standards} ${test_force})
