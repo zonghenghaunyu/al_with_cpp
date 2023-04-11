@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 3.19)
-project(al)
+cmake_minimum_required (VERSION 3.16)
 
-set(CMAKE_CXX_STANDARD 14)
+project (usegtest)
 
-add_executable(al main.cpp)
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+#add_executable(usegtest third_party/doctest/doctest.h )
+add_subdirectory (src)
+add_subdirectory(tests)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/third_party/doctest)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/tests)
