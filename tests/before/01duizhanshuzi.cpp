@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     //5 10 20 50 85 1
     int num = 0;

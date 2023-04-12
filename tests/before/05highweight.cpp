@@ -35,7 +35,7 @@
 using namespace std;
 
 
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
 
     vector<int> high;
     vector<int> weight;

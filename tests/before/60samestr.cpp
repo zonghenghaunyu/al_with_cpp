@@ -23,7 +23,7 @@ RDXI
 输出
 4
 */
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     
     string base,find;
     cin >> base >> find;

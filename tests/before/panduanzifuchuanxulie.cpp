@@ -10,7 +10,7 @@ using namespace std;
  * 22:51 -- 23:10
 */
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     
     string target,source;

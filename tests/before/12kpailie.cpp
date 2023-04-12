@@ -47,7 +47,7 @@ void change(vector<bool>& tag,deque<int>& quque,int k,int level,int n,int& flag)
     
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     int n,k;
     cin >> n>>k;

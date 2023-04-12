@@ -299,7 +299,7 @@ string(JOIN " " msg_standards ${msg_standards})
 set(msg "Testing standards: ${msg_standards}")
 
 # file(GLOB files unit-*.cpp)
-file(GLOB files src/*.cpp)
+file(GLOB files src/*.cpp before/*.cpp)
 
 foreach(file ${files})
     json_test_add_test_for(${file} MAIN test_main CXX_STANDARDS ${test_cxx_standards} ${test_force})

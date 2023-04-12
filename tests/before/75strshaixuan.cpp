@@ -39,7 +39,7 @@ fAdDAkBbBq
 根据ascii码值排序，前4个字母为AABB ，由于B重复，
 则只取B的（第一个）最小位置索引6 ，而不是第二个B的位置索引8
 */
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     /* code */
 

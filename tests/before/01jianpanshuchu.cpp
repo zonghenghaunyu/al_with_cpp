@@ -64,7 +64,7 @@ void command5(int& screan,bool& isSelect) {
     }
 }
 
-int main(){
+int main1(){
     int screen = 0;
     int table = 0;
     bool isSelect = false;

@@ -23,7 +23,7 @@ int to10Base(int num,int base){
 }
 
 
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
 
     // int num,n;
     // std::cin >> num>>n;

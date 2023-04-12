@@ -42,7 +42,7 @@
 */
 using namespace std;
 
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     
     string s;
     cin >> s;
@@ -103,9 +103,9 @@ int main(int argc, char const *argv[]){
     int time = 0;
 
 
-    if(!arr[0][0]){
-        time++;
-    }
+    // if(!arr[0][0]){
+    //     time++;
+    // }
     cout << time<<endl;
 
 

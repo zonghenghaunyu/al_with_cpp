@@ -51,7 +51,7 @@ void getMin(int all,int a,int b,int c,vector<bool> used,int& min,int& sum,int& l
     }
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     //满减100 -10，打折92，无门栏5
     int a,b,c;

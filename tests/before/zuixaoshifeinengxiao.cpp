@@ -31,7 +31,7 @@ n表示施肥任务必须在n天内（含n天）完成；
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     int m,n;
     cin >>m>>n;

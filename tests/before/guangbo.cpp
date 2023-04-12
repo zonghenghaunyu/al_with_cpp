@@ -48,7 +48,7 @@ void findAll(vector<bool>& used, vector<vector<int>> all,int cur){
     }
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     int num = 0;
     vector<int> arr;

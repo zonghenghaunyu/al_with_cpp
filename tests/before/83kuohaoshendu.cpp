@@ -60,7 +60,7 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     unordered_set<char> left{'(','{','['};
     unordered_set<char> right{')','}',']'};
 

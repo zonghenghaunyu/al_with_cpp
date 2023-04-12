@@ -58,7 +58,7 @@ void findstr(string str,int i,int j,vector<vector<bool>> used,vector<vector<char
 
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
 /*
 4

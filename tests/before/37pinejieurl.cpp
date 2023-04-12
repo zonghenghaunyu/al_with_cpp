@@ -36,7 +36,7 @@ URL前缀（一个长度小于100的字符串),URL后缀（一个长度小于100
 输出
 /
 */
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     string url;
     cin>>url;

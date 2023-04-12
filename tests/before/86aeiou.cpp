@@ -27,7 +27,7 @@ asdbuiodevauufgh
 说明
 样例1解释：最长元音子串为 “uio” 或 “auu”，其长度都为3，因此输出3
 */
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     
     string str;
     cin >> str;

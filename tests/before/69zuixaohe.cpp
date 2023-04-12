@@ -68,7 +68,7 @@ int getMin(vector<int> small,vector<int> big,int k){
 
 }
 
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     
     int n1,n2 ;
     cin >> n1;

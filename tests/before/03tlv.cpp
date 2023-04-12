@@ -18,7 +18,7 @@
 第四个信元的Tag是31，其长度为2（02 00），所以返回长度后面的两个字节即可，即32 33。
 */
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     /* code */
 

@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     
     vector<int> a{3,2,1,5,3,2,3,7,89,3};

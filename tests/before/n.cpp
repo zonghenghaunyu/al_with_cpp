@@ -34,7 +34,7 @@ void dostr(string s,vector<vector<string>>& inner,deque<string>& que,vector<bool
     }
     
 }
-int main(int argc, char const* argv[])
+int main1(int argc, char const* argv[])
 {
     string s;
     cin >> s;

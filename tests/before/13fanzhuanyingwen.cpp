@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     string tag;
     vector<string> words;

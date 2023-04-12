@@ -47,7 +47,7 @@ bool isFalse(string num1,string num2,int n,unordered_map<char,int> map){
         return false;
     }
 }
-int main(){
+int main1(){
     // 'a' = 97
 
     char a[]{'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h'

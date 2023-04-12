@@ -31,7 +31,7 @@ void addnother(vector<bool>& used,vector<int> arr,int level,int cur_sum,int sum,
 
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
 
 

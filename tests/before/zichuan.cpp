@@ -41,7 +41,7 @@ void do_s(deque<vector<char>>& arr,int start,string s){
     
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     string s = "123";
     

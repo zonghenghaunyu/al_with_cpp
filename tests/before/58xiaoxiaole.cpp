@@ -33,7 +33,7 @@ mMbccbc
 在 mMbccbc 中，可以先消除 cc ；此时字符串变成 mMbbc ，可以再消除 bb ；此时字符串变成 mMc ，此时没有相邻且相同的字符，无法继续消除。最终得到的字符串为 mMc ，长度为3
 备注:
 输入中包含 非大小写英文字母 时，均为异常输入，直接返回 0*/
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
     
     string s;
 

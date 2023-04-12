@@ -24,7 +24,7 @@ void do_al(int i,int j,int w,int& ans,vector<vector<int>> arr){
     do_al(i,j,w+1,ans,arr);
 }
 
-int main(int argc, char const *argv[])
+int main1(int argc, char const *argv[])
 {
     //init
     int n,m;

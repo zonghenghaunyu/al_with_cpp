@@ -63,7 +63,7 @@ vector<pair<int,int>> getLest(tuple<int,int,int> t){
 
     return s;
 }
-int main(int argc, char const *argv[]){
+int main1(int argc, char const *argv[]){
 
     int n;
     cin >> n;
